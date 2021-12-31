@@ -2,7 +2,7 @@
  * @Author: Sunny
  * @Date: 2021-12-30 17:35:01
  * @LastEditors: Suuny
- * @LastEditTime: 2021-12-30 18:27:30
+ * @LastEditTime: 2021-12-31 10:19:28
  * @Description:
  * @FilePath: \nuxt-demo\pages\news\index.vue
 -->
@@ -19,9 +19,16 @@
           News-1
         </nuxt-link>
       </li>
-      <li>
+      <!-- <li>
         <nuxt-link :to="{ name: 'news-id', params: { id: 456 } }">
           News-2
+        </nuxt-link>
+      </li> -->
+      <li>
+        <nuxt-link
+          :to="{ name: 'news-id', params: { id: 666, title: 'cmh.com' } }"
+        >
+          News-1
         </nuxt-link>
       </li>
     </ul>
